@@ -1,0 +1,17 @@
+extends layout 
+
+block content 
+  h1= title 
+  a(href="/") Back 
+  
+  form(method="POST", action="/new")
+    label(for="text")
+      span Text
+      input(type="text", name="text")
+    label(for="artist")
+      span Artist
+      input(type="text", name="artist") 
+    label(for="user")
+      span Your Name
+      input(type="text", name="user")
+    button(type="submit") SUBMIT
