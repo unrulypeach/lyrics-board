@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -13,7 +14,14 @@ a {
   color: #00B7FF;
 }
 
-.container {
+.msg-container {
+  margin-top: 15px;
+  height: 60vh;
+  overflow: scroll;
+
+}
+
+.msg {
   margin: 10px 0;
 }
 

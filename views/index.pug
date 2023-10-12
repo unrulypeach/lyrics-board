@@ -4,10 +4,11 @@ block content
   h1= title
   a(href="/new") Add your fave 
 
-  each item in messages 
-    .container
-        .text= item.text
-        .artist= item.artist
-        .small-container
-          div= item.user 
-          div= item.added.toLocaleDateString()
+  .msg-container
+    each item in messages 
+      .msg
+          .text= item.text
+          .artist= item.artist
+          .small-container
+            div= item.user 
+            div= item.added.toLocaleDateString()
