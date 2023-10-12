@@ -7,11 +7,11 @@ block content
   form(method="POST", action="/new")
     label(for="text")
       span Text
-      input(type="text", name="text")
+      input(type="text", name="text" required)
     label(for="artist")
       span Artist
-      input(type="text", name="artist") 
+      input(type="text", name="artist" required) 
     label(for="user")
       span Your Name
-      input(type="text", name="user")
+      input(type="text", name="user" required)
     button(type="submit") SUBMIT
